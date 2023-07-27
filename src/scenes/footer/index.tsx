@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
             <div className="mt-16 basis-1/2 md:mt-0">
                 <img src={logo} alt="logo" />
-                <p classNamr="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae culpa laboriosam placeat esse ullam exercitationem inventore eum rerum sed harum!</p>
+                <p className="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae culpa laboriosam placeat esse ullam exercitationem inventore eum rerum sed harum!</p>
                 <p>@ All Rights Reserve </p>
             </div>
             <div className="mt-16 basis-1/4 md:mt-0">
