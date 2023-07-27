@@ -9,40 +9,44 @@ import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 import Class from "./Class";
 
-
 const classes: Array<ClassType> = [
-    {
-        name:"Weight Training Classes",
-        description:"Adipisci,atque laudantium voluptatibus fugit rerum optio alias quia repellendus saepe sapiente quae amet? Veniam minima eaque est necessitatibus laborum perferendis ullam.",
-        image :image1
-    },
-    {
-        name:"Fitness Classes",
-        description:"Adipisci,atque laudantium voluptatibus fugit rerum optio alias quia repellendus saepe sapiente quae amet? Veniam minima eaque est necessitatibus laborum perferendis ullam.",
-        image :image2
-    },
-    {
-        name:"Training Classes",
-        description:"Adipisci,atque laudantium voluptatibus fugit rerum optio alias quia repellendus saepe sapiente quae amet? Veniam minima eaque est necessitatibus laborum perferendis ullam.",
-        image :image3
-    },
-    {
-        name:"Ab core Classes",
-        description:"Adipisci,atque laudantium voluptatibus fugit rerum optio alias quia repellendus saepe sapiente quae amet? Veniam minima eaque est necessitatibus laborum perferendis ullam.",
-        image :image4
-    },
-    {
-        name:"Yoga Classes",
-        description:"Adipisci,atque laudantium voluptatibus fugit rerum optio alias quia repellendus saepe sapiente quae amet? Veniam minima eaque est necessitatibus laborum perferendis ullam.",
-        image :image5
-    },
-    {
-        name:"Adventure Classes",
-        description:"Adipisci,atque laudantium voluptatibus fugit rerum optio alias quia repellendus saepe sapiente quae amet? Veniam minima eaque est necessitatibus laborum perferendis ullam.",
-        image :image6
-    },
-]
-
+  {
+    name: "Weight Training Classes",
+    description:
+      "Adipisci,atque laudantium voluptatibus fugit rerum optio alias quia repellendus saepe sapiente quae amet? Veniam minima eaque est necessitatibus laborum perferendis ullam.",
+    image: image1,
+  },
+  {
+    name: "Fitness Classes",
+    description:
+      "Adipisci,atque laudantium voluptatibus fugit rerum optio alias quia repellendus saepe sapiente quae amet? Veniam minima eaque est necessitatibus laborum perferendis ullam.",
+    image: image2,
+  },
+  {
+    name: "Training Classes",
+    description:
+      "Adipisci,atque laudantium voluptatibus fugit rerum optio alias quia repellendus saepe sapiente quae amet? Veniam minima eaque est necessitatibus laborum perferendis ullam.",
+    image: image3,
+  },
+  {
+    name: "Ab core Classes",
+    description:
+      "Adipisci,atque laudantium voluptatibus fugit rerum optio alias quia repellendus saepe sapiente quae amet? Veniam minima eaque est necessitatibus laborum perferendis ullam.",
+    image: image4,
+  },
+  {
+    name: "Yoga Classes",
+    description:
+      "Adipisci,atque laudantium voluptatibus fugit rerum optio alias quia repellendus saepe sapiente quae amet? Veniam minima eaque est necessitatibus laborum perferendis ullam.",
+    image: image5,
+  },
+  {
+    name: "Adventure Classes",
+    description:
+      "Adipisci,atque laudantium voluptatibus fugit rerum optio alias quia repellendus saepe sapiente quae amet? Veniam minima eaque est necessitatibus laborum perferendis ullam.",
+    image: image6,
+  },
+];
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -77,18 +81,16 @@ function OurClasses({ setSelectedPage }: Props) {
         </motion.div>
         {/* SCROLLING CLASSES */}
         <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
-            <ul className="w-[2800px] whitespace-nowrap">
-                {
-                    classes.map((item,index)=>(
-                        <Class 
-                         key={`${item.name}-${index}`}
-                         name={item.name}
-                         description={item.description}
-                         image={item.image}
-                        />
-                    ))
-                }
-            </ul>
+          <ul className="w-[2800px] whitespace-nowrap">
+            {classes.map((item, index) => (
+              <Class
+                key={`${item.name}-${index}`}
+                name={item.name}
+                description={item.description}
+                image={item.image}
+              />
+            ))}
+          </ul>
         </div>
       </motion.div>
     </section>

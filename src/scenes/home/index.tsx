@@ -2,7 +2,7 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
 import { SelectedPage } from "@/shared/types";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import HeaderImage from '@/assets/Header.jpg'
+import HeaderImage from '@/assets/Header.png'
 import sponsoreOne from "@/assets/sponsore-1.png"
 import sponsoreTwo from "@/assets/sponsore-2.png"
 import sponsoreThree from "@/assets/sponsore-3.png"
@@ -75,7 +75,7 @@ const Home = ({setSelectedPage}: Props) => {
             </div>
             {/* IMAGE */}
             <div className="flex basis-3/5 justify-center md:ml-40 md:mt-16 md:justify-items-end">
-                <img className="sm:w-full sm:h-[150px] sm:mt-8 md:w-full md:h-[300px]" src={HeaderImage} alt="Header" />
+                <img className="md:w-3/5 md:h-[300px]" src={HeaderImage} alt="Header" />
             </div>
         </motion.div>
         {/* SPONSORS */}
