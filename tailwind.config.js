@@ -16,7 +16,27 @@ export default {
         "primary-50":"#FF6B66",
         "secondary-40":"#FFCD58",
         "secondary-50":"#FFC132",
+   // second color theme
+  //  "gray-10": "#0052BA",
+  //  "gray-50": "#50C878",
+  //  "gray-100": "#FFBF00",
+  //  "gray-500": "#8A2BE2",
+  //  "primary-10": "#8B4513",
+  //  "primary-30": "#00CED1",
+  //  "primary-50": "#FFC87C",
+  //  "secondary-40": "#00A86B",
+  //  "secondary-50": "#7FFFD4"
 
+   // Third color theme
+   // "gray-10":"#F8F4a0",
+   // "gray-50":"#EFE600",
+   // "gray-100":"#DFCC03",
+   // "gray-500":"#5E0004",
+   // "primary-10":"#FFE105",
+   // "primary-30":"#FFA601",
+   // "primary-50":"#FF6B02",
+   // "secondary-40":"#FFCD03",
+   // "secondary-50":"#FFC110",
      
       },
       backgroundImage: (theme) =>({
