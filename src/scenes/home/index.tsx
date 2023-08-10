@@ -40,7 +40,7 @@ const Home = ({ setSelectedPage }: Props) => {
           >
             <div className="relative">
               <div className="before:absolute">
-                <h1 className="font-bold text-[55px] uppercase">my_gym</h1>
+                <h1 className="font-bold text-[55px]" title="Student Pathways Abroad">GlobalEd Ventures</h1>
               </div>
             </div>
             <p className="mt-8 text-sm">

@@ -9,6 +9,7 @@ import HText from "@/shared/HText";
 import Benefit from "./Benefit";
 import ActionButton from "@/shared/ActionButton";
 import banefitsGraphics from "@/assets/benefitGraphic.jpg";
+import { Carousel } from "react-responsive-carousel";
 const benefits: Array<BenefitType> = [
   {
     icon: <HomeModernIcon className="h-6 w-6" />,
@@ -92,11 +93,25 @@ const Benefits = ({ setSelectedPage }: Props) => {
         {/* GRAPHICS AND DESCRIPTIONS */}
         <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
           {/* GRAPHICS */}
-          <img
+          {/* <img
             className="mx-auto w-3/5 sm:mb-5"
-            src={banefitsGraphics}
+             src={banefitsGraphics}
             alt=""
-          />
+          /> */}
+           <Carousel
+            showArrows={true}
+            showThumbs={false}
+            showStatus={false}
+            autoPlay={true}
+            infiniteLoop={true}
+            className="mx-auto w-4/5 sm:mb-5"
+          >
+          
+              <img  src={banefitsGraphics} alt="Image 1" />
+              <img src={banefitsGraphics} alt="Image 2" />
+              <img  src={banefitsGraphics} alt="Image 3" />
+        
+          </Carousel>
           {/* DESCRIPTION */}
           <div>
             {/* TITLE */}

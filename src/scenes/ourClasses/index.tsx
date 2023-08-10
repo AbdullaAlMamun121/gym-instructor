@@ -80,7 +80,7 @@ function OurClasses({ setSelectedPage }: Props) {
           </div>
         </motion.div>
         {/* SCROLLING CLASSES */}
-        <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
+        <div className="mt-10 h-[380px] w-full overflow-x-auto overflow-y-hidden">
           <ul className="w-[2800px] whitespace-nowrap">
             {classes.map((item, index) => (
               <Class
